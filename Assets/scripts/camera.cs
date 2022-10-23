@@ -11,17 +11,17 @@ public class camera : MonoBehaviour
     public float camwidth;
 
     public BoxCollider2D bound; // Map bound
-    private Vector3 minBound;  // MapÀÇ ¿ÞÂÊ ¾Æ·¡
-    private Vector3 maxBound; // MapÀÇ ¿À¸¥ÂÊ À§
-    private float halfWidth; // Ä«¸Þ¶ó °¡·ÎÀÇ Àý¹Ý
-    private float halfHeight; // Ä«¸Þ¶ó ¼¼·ÎÀÇ Àý¹Ý
-    private Camera theCamera; // Ä«¸Þ¶ó Size °¡ ´ã°ÜÀÖÀ½
+    private Vector3 minBound;  // Mapï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ·ï¿½
+    private Vector3 maxBound; // Mapï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+    private float halfWidth; // Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    private float halfHeight; // Ä«ï¿½Þ¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    private Camera theCamera; // Ä«ï¿½Þ¶ï¿½ Size ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-    // Zoom In, Zoom Out º¯¼ö ¼±¾ð
-    //private float maxDist = 7.0f; // ÃÖ´ë ÁÜÀÎ
-    //private float minDist = 5.0f;  // ÁÜ¾Æ¿ô
-    public float zoomSpeed = 4f; //ÁÜ ¼Óµµ
-    private float distance;  //Ä«¸Þ¶ó·Î º¸ÀÌ´Â ¿µ¿ª
+    // Zoom In, Zoom Out ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    //private float maxDist = 7.0f; // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½
+    //private float minDist = 5.0f;  // ï¿½Ü¾Æ¿ï¿½
+    public float zoomSpeed = 4f; //ï¿½ï¿½ ï¿½Óµï¿½
+    private float distance;  //Ä«ï¿½Þ¶ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½
     
 
 
@@ -35,7 +35,7 @@ public class camera : MonoBehaviour
         halfHeight = theCamera.orthographicSize;
         halfWidth = halfHeight * Screen.width / Screen.height;
 
-        //distance = Camera.main.GetComponent<Camera>().orthographicSize; //°Å¸® ÃÊ±âÈ­
+        //distance = Camera.main.GetComponent<Camera>().orthographicSize; //ï¿½Å¸ï¿½ ï¿½Ê±ï¿½È­
 
         distance = Camera.main.GetComponent<Camera>().fieldOfView;
 
@@ -45,7 +45,7 @@ public class camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target.gameObject != null)
+        if (target != null && target.gameObject != null)
         {
             targetPos.Set(target.transform.position.x,
                       target.transform.position.y, transform.position.z);
@@ -74,7 +74,7 @@ public class camera : MonoBehaviour
     }
 
 
-    public void zoom() //¹Ý´ë. ÁÜ¾Æ¿ôÀÓ
+    public void zoom() //ï¿½Ý´ï¿½. ï¿½Ü¾Æ¿ï¿½ï¿½ï¿½
     {
     
 

@@ -2989,7 +2989,7 @@ MonoBehaviour:
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 658827522}
-  camTartget: {fileID: 2093434693}
+  camTartget: {fileID: 1595811385}
   meet: 0
   center: 113
   camSpeed: 2

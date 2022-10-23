@@ -13,6 +13,7 @@ public class start : MonoBehaviour
     public GameObject fullCount;
     public Animator anim;
 
+    
 
     void Update()
     {
@@ -21,6 +22,7 @@ public class start : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             star.GetComponent<CircleMove>().circleMove = true;
+            
         }
 
         if (fullCount.GetComponent<keySystem>().count == fullCount.GetComponent<keySystem>().touchCount)
@@ -45,8 +47,7 @@ public class start : MonoBehaviour
 
             Vector3 v3 = this.transform.position - star.transform.position;
 
-
-
+            
 
             camera campoint = GameObject.Find("Main Camera").GetComponent<camera>();
             campoint.target = camTartget;
@@ -64,6 +65,7 @@ public class start : MonoBehaviour
                 GameObject point = transform.GetChild(0).gameObject;
                 star.transform.position = Vector2.MoveTowards(star.transform.position, point.transform.position, rotateSpeed * Time.deltaTime);
                 star.transform.rotation = point.transform.rotation;
+                star.GetComponent<CircleMove>().PositionSave();
             }
 
 

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class panel : MonoBehaviour
+public class retryPanel : MonoBehaviour
 {
-    
+    public GameObject star;
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +24,10 @@ public class panel : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void Return()
+    {
+        star.GetComponent<CircleMove>().PositionLoad();
+        
+    }
 
 }

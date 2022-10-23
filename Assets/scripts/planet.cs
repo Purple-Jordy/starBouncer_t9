@@ -86,9 +86,10 @@ public class planet : MonoBehaviour
         if (coll.gameObject.CompareTag("star"))
         {
 
-             //star.transform.eulerAngles = new Vector3(0, 0, 180);
+            //star.transform.eulerAngles = new Vector3(0, 0, 180);
             //star.transform.rotation = Quaternion.Euler(0, 0, 90);
-            
+
+
 
             meet = true;
             anim.SetBool("touched", true);
@@ -96,7 +97,7 @@ public class planet : MonoBehaviour
             //move.rigid.velocity = Vector2.zero;
             //star.transform.localEulerAngles = new Vector3(0, 0, 180);
 
-            
+            //star.GetComponent<CircleMove>().PositionSave();
 
             //<수정
             star.GetComponent<CircleMove>().rigid.velocity = Vector2.zero;
@@ -117,7 +118,7 @@ public class planet : MonoBehaviour
 
             //>
 
-           
+
 
 
 
@@ -146,6 +147,8 @@ public class planet : MonoBehaviour
                 star.transform.position = Vector2.MoveTowards(star.transform.position, point.transform.position, rotateSpeed * Time.deltaTime);
                 star.transform.rotation = point.transform.rotation;
 
+                star.GetComponent<CircleMove>().PositionSave();
+
                 //star.transform.LookAt(gameObject.transform);
                 //Vector3 v3 = this.transform.position - star.transform.position;//방향
                 //star.transform.eulerAngles = v3;
@@ -170,5 +173,12 @@ public class planet : MonoBehaviour
 
 
     }
+
+   
+
+    
+
+
+
 
 }

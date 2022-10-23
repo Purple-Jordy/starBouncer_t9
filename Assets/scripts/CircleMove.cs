@@ -18,7 +18,8 @@ public class CircleMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigid = GetComponent<Rigidbody2D>();       
+        rigid = GetComponent<Rigidbody2D>();
+        
     }
    
 
@@ -28,6 +29,9 @@ public class CircleMove : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && circleMove == false)
         {
             circleMove = true;
+  
+
+
         }
 
         if (circleMove == true)
@@ -56,7 +60,36 @@ public class CircleMove : MonoBehaviour
         rigid.velocity = Vector2.zero;
         gameObject.SetActive(false);
         panel.SetActive(true);
+        
     }
+
+    public void PositionSave()
+    {
+        PlayerPrefs.SetFloat("starX", gameObject.transform.position.x);
+        PlayerPrefs.SetFloat("starY", gameObject.transform.position.y);
+        PlayerPrefs.Save();
+    }
+
+    public void PositionLoad()
+    {
+        
+        gameObject.SetActive(true);
+        float x = PlayerPrefs.GetFloat("starX");
+        float y = PlayerPrefs.GetFloat("starY");
+        
+        
+        gameObject.transform.position = new Vector3(x, y, 0);
+        panel.SetActive(false);
+
+
+    }
+
+    public void OffPanel()
+    {
+        panel.SetActive(false);
+    }
+
+    
 
 }
 

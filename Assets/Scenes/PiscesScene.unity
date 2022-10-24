@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 39800040}
   - component: {fileID: 39800039}
   - component: {fileID: 39800038}
-  - component: {fileID: 39800037}
+  - component: {fileID: 39800041}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -537,19 +537,6 @@ RectTransform:
   m_AnchoredPosition: {x: 39, y: -58}
   m_SizeDelta: {x: 70, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &39800037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39800035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9880c5c850a209a48addeb880f37adf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  star: {fileID: 0}
 --- !u!114 &39800038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,9 +581,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 39800037}
-        m_TargetAssemblyTypeName: panel, Assembly-CSharp
-        m_MethodName: retry
+      - m_Target: {fileID: 39800041}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -644,6 +631,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39800035}
   m_CullTransparentMesh: 1
+--- !u!114 &39800041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39800035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35432e4dee89702428cea128c63f4151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &49538406
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +980,7 @@ MonoBehaviour:
   anim: {fileID: 147341372}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &147341374
@@ -1209,7 +1208,7 @@ MonoBehaviour:
   meet: 0
   center: 60
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &156450161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3160,7 +3159,7 @@ MonoBehaviour:
   speed: 1
   camwidth: 60
   bound: {fileID: 248944908}
-  zoomSpeed: 4
+  zoomSpeed: 5
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3219,7 +3218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554974646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.32, y: -7.31, z: 1}
+  m_LocalPosition: {x: 9.76, y: -7.47, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4391,7 +4390,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
-    m_FontStyle: 3
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -4588,9 +4587,9 @@ MonoBehaviour:
   anim: {fileID: 831066285}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &831066287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5615,7 +5614,7 @@ MonoBehaviour:
   anim: {fileID: 970920910}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &970920912
@@ -5878,7 +5877,7 @@ MonoBehaviour:
   anim: {fileID: 1031095415}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &1031095417
@@ -6550,7 +6549,7 @@ MonoBehaviour:
   anim: {fileID: 1149020130}
   camTartget: {fileID: 2125985308}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &1149020132
@@ -7430,7 +7429,7 @@ MonoBehaviour:
   anim: {fileID: 1280781175}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 95
+  center: 94
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &1280781177
@@ -7660,7 +7659,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
-    m_FontStyle: 3
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -8930,7 +8929,7 @@ MonoBehaviour:
   anim: {fileID: 1537772874}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &1537772876
@@ -10313,7 +10312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 160}
+  m_AnchoredPosition: {x: 0, y: 159.99997}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1731619221
@@ -11123,7 +11122,7 @@ MonoBehaviour:
   anim: {fileID: 1798971752}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &1798971754
@@ -11452,7 +11451,7 @@ MonoBehaviour:
   anim: {fileID: 1868893503}
   camTartget: {fileID: 2125985308}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &1868893505
@@ -12383,7 +12382,7 @@ MonoBehaviour:
   anim: {fileID: 2057628133}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &2057628135
@@ -12939,7 +12938,7 @@ MonoBehaviour:
   anim: {fileID: 2125985311}
   camTartget: {fileID: 2125985308}
   meet: 0
-  center: 94
+  center: 95
   camSpeed: 2
   zoomSpeed: 10
 --- !u!212 &2125985313

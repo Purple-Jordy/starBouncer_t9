@@ -30,7 +30,9 @@ public class nextStage : MonoBehaviour
 
         //다음 씬을 불러온다
         SceneManager.LoadScene(nextScene);
-        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+
+        // 다음 씬을 저장한다 
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex + 1);
         PlayerPrefs.Save();
 
     }

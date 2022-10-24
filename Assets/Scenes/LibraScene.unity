@@ -1061,7 +1061,7 @@ MonoBehaviour:
   anim: {fileID: 167669236}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 125
+  center: 130
   camSpeed: 2
   zoomSpeed: 20
 --- !u!212 &167669238
@@ -2393,7 +2393,7 @@ MonoBehaviour:
   anim: {fileID: 463344198}
   camTartget: {fileID: 1864158827}
   meet: 0
-  center: 125
+  center: 130
   camSpeed: 2
   zoomSpeed: 20
 --- !u!212 &463344200
@@ -2872,7 +2872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558944080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.39, y: 10.2, z: 0}
+  m_LocalPosition: {x: 8.55, y: 9.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3198,7 +3198,7 @@ MonoBehaviour:
   anim: {fileID: 658827522}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 125
+  center: 130
   camSpeed: 2
   zoomSpeed: 20
 --- !u!212 &658827524
@@ -8706,7 +8706,7 @@ MonoBehaviour:
   anim: {fileID: 1901549910}
   camTartget: {fileID: 1864158827}
   meet: 0
-  center: 125
+  center: 130
   camSpeed: 2
   zoomSpeed: 20
 --- !u!95 &1901549910

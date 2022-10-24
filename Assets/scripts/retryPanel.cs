@@ -24,8 +24,10 @@ public class retryPanel : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void Return()
+    public void Return() //Revive
     {
+
+        
         star.GetComponent<CircleMove>().PositionLoad();
         
     }

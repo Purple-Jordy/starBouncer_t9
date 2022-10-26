@@ -135,6 +135,13 @@ public class keySystem : MonoBehaviour
         finishUi.SetActive(true);
     }
 
-    
+    void Vibe()
+    {
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+    }
+
 
 }

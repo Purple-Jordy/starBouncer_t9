@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class retryPanel : MonoBehaviour
+public class PauseUI : MonoBehaviour
 {
-    public GameObject star;
-
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Pauseui;
 
-    // Update is called once per frame
-    void Update()
+    public void Resume()
     {
-        
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+
+        Time.timeScale = 1;
+        Pauseui.SetActive(false);
     }
 
     public void retry()
@@ -25,19 +26,21 @@ public class retryPanel : MonoBehaviour
 #if !UNITY_EDITOR
      Vibrate.vibrate((long)100);
 #endif
-
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
-    public void Return()
+
+
+    public void ExitGame()
     {
 
 #if !UNITY_EDITOR
      Vibrate.vibrate((long)100);
 #endif
 
-        star.GetComponent<CircleMove>().PositionLoad();
-        
+        Application.Quit();
     }
 
 }

@@ -61,6 +61,12 @@ public class start : MonoBehaviour
             campoint.speed = camSpeed; // 카메라 타겟 속도
             campoint.zoomSpeed = zoomSpeed; // 카메라 확대 속도 
 
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+
+
         }
     }
 

@@ -22,6 +22,8 @@ public class planet : MonoBehaviour
     
     AudioSource audioSoure;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -111,12 +113,17 @@ public class planet : MonoBehaviour
 
 
             Vector3 v3 = this.transform.position - star.transform.position;
-            
+
 
             //if (v3.x > 0.0f) clockWise = true;
             //else if (v3.x < 0.0f) clockWise = false;
 
             //>
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
 
 
 
@@ -162,11 +169,11 @@ public class planet : MonoBehaviour
         }
     }
 
-   
-
-   
-
     
+
+
+
+
 
 
 

@@ -15,6 +15,9 @@ public class CircleMove : MonoBehaviour
 
     public bool circleMove = false; //¿ÃµøΩ√ ON
 
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +32,11 @@ public class CircleMove : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && circleMove == false)
         {
             circleMove = true;
-  
+
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
 
 
         }

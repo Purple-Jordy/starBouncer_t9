@@ -804,7 +804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128983276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -913,7 +913,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.6
 --- !u!95 &156450159
 Animator:
   serializedVersion: 4
@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 156450159}
@@ -954,7 +954,7 @@ MonoBehaviour:
   meet: 0
   center: 86
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &156450161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1731,7 +1731,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &313979454
 Animator:
   serializedVersion: 4
@@ -1764,15 +1764,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 313979454}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 100
+  center: 85
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &313979456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2454,7 +2454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446153216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.49, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2581,7 +2581,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &474107210
 Animator:
   serializedVersion: 4
@@ -2614,7 +2614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 474107210}
@@ -2622,7 +2622,7 @@ MonoBehaviour:
   meet: 0
   center: 90
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &474107212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3109,7 +3109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499621125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.655, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3445,7 +3445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554974646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.43, y: -0.2, z: 1}
+  m_LocalPosition: {x: 15.5, y: 1.3, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3721,6 +3721,7 @@ GameObject:
   - component: {fileID: 692114631}
   - component: {fileID: 692114633}
   - component: {fileID: 692114634}
+  - component: {fileID: 692114635}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -3845,6 +3846,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &692114635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692114629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7c467172d0c8a4495508cec97d2598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 27080032}
+  star: {fileID: 908557744}
 --- !u!1 &713343943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4382,7 +4397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793291123}
   m_Layer: 0
-  m_Name: User
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5519,7 +5534,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.51
+  m_Radius: 0.6
 --- !u!95 &970920910
 Animator:
   serializedVersion: 4
@@ -5552,15 +5567,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 970920910}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 100
+  center: 85
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &970920912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5830,7 +5845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105014610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5957,7 +5972,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &1149020130
 Animator:
   serializedVersion: 4
@@ -5990,7 +6005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1149020130}
@@ -5998,7 +6013,7 @@ MonoBehaviour:
   meet: 0
   center: 86
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &1149020132
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6173,7 +6188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158401113}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6446,7 +6461,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &1280781175
 Animator:
   serializedVersion: 4
@@ -6479,15 +6494,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1280781175}
-  camTartget: {fileID: 1595811385}
+  camTartget: {fileID: 2093434693}
   meet: 0
-  center: 90
+  center: 107
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &1280781177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7067,11 +7082,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a4ad870ffae7a42923ae3d882a7b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 100
   star: {fileID: 908557744}
   camTartget: {fileID: 1874155516}
   fullCount: {fileID: 733060878}
   anim: {fileID: 1506055899}
+  camSpeed: 2
+  zoomSpeed: 10
+  center: 86
 --- !u!95 &1506055899
 Animator:
   serializedVersion: 4
@@ -7543,7 +7561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574570957}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.655, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8313,7 +8331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788809413}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8412,7 +8430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793882406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.49, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8584,7 +8602,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.6
 --- !u!95 &1798971752
 Animator:
   serializedVersion: 4
@@ -8617,15 +8635,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1798971752}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 100
+  center: 85
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &1798971754
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9679,7 +9697,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.51
+  m_Radius: 0.6
 --- !u!95 &2057628133
 Animator:
   serializedVersion: 4
@@ -9712,15 +9730,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 2057628133}
-  camTartget: {fileID: 2093434693}
+  camTartget: {fileID: 1595811385}
   meet: 0
-  center: 110
+  center: 90
   camSpeed: 2
-  zoomSpeed: 10
+  zoomSpeed: 20
 --- !u!212 &2057628135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9978,7 +9996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093434693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.31, y: -3.47, z: 1}
+  m_LocalPosition: {x: 7.26, y: -4.84, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

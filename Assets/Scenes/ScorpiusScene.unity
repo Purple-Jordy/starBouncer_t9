@@ -710,7 +710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135358769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -838,7 +838,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!95 &147341372
 Animator:
   serializedVersion: 4
@@ -871,7 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 147341372}
@@ -1148,7 +1148,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!95 &156450159
 Animator:
   serializedVersion: 4
@@ -1181,7 +1181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 156450159}
@@ -1751,7 +1751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239875494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2304,7 +2304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384313811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.86, y: 7.72, z: 1}
+  m_LocalPosition: {x: 22.82, y: 7.42, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2436,7 +2436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446153216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2619,7 +2619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449012380}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2718,7 +2718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499621125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2971,7 +2971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.63, y: -6.3, z: -10}
+  m_LocalPosition: {x: 6.6202154, y: -5.5190363, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3053,7 +3053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554974646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.49, y: 3.32, z: 1}
+  m_LocalPosition: {x: 16.6, y: 2.7, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3396,7 +3396,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &658827522
 Animator:
   serializedVersion: 4
@@ -3429,7 +3429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 350
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 658827522}
@@ -3948,6 +3948,7 @@ GameObject:
   - component: {fileID: 692114632}
   - component: {fileID: 692114631}
   - component: {fileID: 692114633}
+  - component: {fileID: 692114634}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -4058,6 +4059,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &692114634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692114629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7c467172d0c8a4495508cec97d2598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 17483594}
+  star: {fileID: 908557744}
 --- !u!1 &713343943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,7 +4505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793291123}
   m_Layer: 0
-  m_Name: User
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4566,7 +4581,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &801292002
 Animator:
   serializedVersion: 4
@@ -4599,7 +4614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 350
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 801292002}
@@ -4810,7 +4825,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!95 &831066285
 Animator:
   serializedVersion: 4
@@ -4843,7 +4858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 831066285}
@@ -5534,7 +5549,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!95 &970920910
 Animator:
   serializedVersion: 4
@@ -5567,7 +5582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 970920910}
@@ -6045,7 +6060,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!95 &1031095415
 Animator:
   serializedVersion: 4
@@ -6078,11 +6093,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1031095415}
-  camTartget: {fileID: 2093434693}
+  camTartget: {fileID: 554974646}
   meet: 0
   center: 77
   camSpeed: 2
@@ -6919,7 +6934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1149020130}
@@ -7537,11 +7552,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1280781175}
-  camTartget: {fileID: 2093434693}
+  camTartget: {fileID: 554974646}
   meet: 0
   center: 77
   camSpeed: 2
@@ -8124,7 +8139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 160}
+  m_AnchoredPosition: {x: 0, y: 159.99997}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1426026119
@@ -8761,11 +8776,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a4ad870ffae7a42923ae3d882a7b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 100
   star: {fileID: 908557744}
   camTartget: {fileID: 1874155516}
   fullCount: {fileID: 733060878}
   anim: {fileID: 1506055899}
+  camSpeed: 2
+  zoomSpeed: 10
+  center: 77
 --- !u!95 &1506055899
 Animator:
   serializedVersion: 4
@@ -9037,7 +9055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1537772874}
@@ -9304,7 +9322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550684423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9403,7 +9421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574570957}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9502,7 +9520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585967065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9600,7 +9618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595811385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.44, y: -5.22, z: 1}
+  m_LocalPosition: {x: 13.34, y: -4.98, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9765,7 +9783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619744538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10889,7 +10907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793882406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11061,7 +11079,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!95 &1798971752
 Animator:
   serializedVersion: 4
@@ -11094,11 +11112,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1798971752}
-  camTartget: {fileID: 1798971749}
+  camTartget: {fileID: 1595811385}
   meet: 0
   center: 77
   camSpeed: 2
@@ -11597,7 +11615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874155516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -4.5, z: 1}
+  m_LocalPosition: {x: 5.5, y: -3.9, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11724,7 +11742,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &1910014748
 Animator:
   serializedVersion: 4
@@ -11757,7 +11775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 350
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1910014748}
@@ -12772,7 +12790,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.6
 --- !u!95 &2057628133
 Animator:
   serializedVersion: 4
@@ -12805,7 +12823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 2057628133}
@@ -13217,7 +13235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 2125985311}

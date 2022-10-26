@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 350
+  rotateSpeed: 150
   star: {fileID: 1602636440}
   key: {fileID: 733060878}
   anim: {fileID: 156450159}
@@ -2267,7 +2267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 661924728}
   m_Layer: 0
-  m_Name: User
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2757,7 +2757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starLine: {fileID: 2006065194}
   count: 0
-  touchCount: 1
+  touchCount: 3
   star: {fileID: 1602636440}
   fullShot: {fileID: 1869449080}
   cam: {fileID: 519420028}
@@ -2783,6 +2783,7 @@ GameObject:
   - component: {fileID: 794951644}
   - component: {fileID: 794951646}
   - component: {fileID: 794951647}
+  - component: {fileID: 794951648}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -2893,6 +2894,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &794951648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794951643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7c467172d0c8a4495508cec97d2598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1261160954}
+  star: {fileID: 1602636440}
 --- !u!1 &849492746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,11 +4732,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a4ad870ffae7a42923ae3d882a7b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 100
   star: {fileID: 1602636440}
   camTartget: {fileID: 0}
   fullCount: {fileID: 733060878}
   anim: {fileID: 1506055899}
+  camSpeed: 2
+  zoomSpeed: 10
+  center: 60
 --- !u!95 &1506055899
 Animator:
   serializedVersion: 4
@@ -6280,7 +6298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 300
+  rotateSpeed: 100
   star: {fileID: 1602636440}
   key: {fileID: 733060878}
   anim: {fileID: 1901549910}

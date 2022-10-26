@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 100
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 156450159}
@@ -2985,7 +2985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 300
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 658827522}
@@ -3211,6 +3211,7 @@ GameObject:
   - component: {fileID: 692114631}
   - component: {fileID: 692114633}
   - component: {fileID: 692114634}
+  - component: {fileID: 692114635}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -3335,6 +3336,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &692114635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692114629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7c467172d0c8a4495508cec97d2598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 307142651}
+  star: {fileID: 908557744}
 --- !u!1 &713343943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3851,7 +3866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793291123}
   m_Layer: 0
-  m_Name: User
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4379,7 +4394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 100
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 970920910}
@@ -5389,7 +5404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 150
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1280781175}
@@ -6143,11 +6158,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a4ad870ffae7a42923ae3d882a7b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 250
+  rotateSpeed: 100
   star: {fileID: 908557744}
   camTartget: {fileID: 1874155516}
   fullCount: {fileID: 733060878}
   anim: {fileID: 1506055899}
+  camSpeed: 2
+  zoomSpeed: 10
+  center: 81
 --- !u!95 &1506055899
 Animator:
   serializedVersion: 4
@@ -7521,7 +7539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 100
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1901549910}
@@ -7731,7 +7749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 300
+  rotateSpeed: 200
   star: {fileID: 908557744}
   key: {fileID: 733060878}
   anim: {fileID: 1910014748}

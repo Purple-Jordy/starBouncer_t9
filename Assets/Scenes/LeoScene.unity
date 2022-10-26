@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 36690001}
   - component: {fileID: 36690000}
   - component: {fileID: 36690002}
+  - component: {fileID: 36690003}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -442,6 +443,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &36690003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36689997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7c467172d0c8a4495508cec97d2598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1579452132}
+  star: {fileID: 467976482}
 --- !u!1 &38215234
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,15 +982,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 350
+  rotateSpeed: 200
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 156450159}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 95
+  center: 85
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &156450161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1458,7 +1473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296635983}
   m_Layer: 0
-  m_Name: User
+  m_Name: star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2064,15 +2079,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 150
+  rotateSpeed: 100
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 463344198}
-  camTartget: {fileID: 463344195}
+  camTartget: {fileID: 1864158827}
   meet: 0
-  center: 90
+  center: 85
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &463344200
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2739,9 +2754,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1874155516}
   speed: 1
-  camwidth: 90
+  camwidth: 93
   bound: {fileID: 248944908}
-  zoomSpeed: 1
+  zoomSpeed: 5
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2983,7 +2998,7 @@ Transform:
   m_GameObject: {fileID: 533249995}
   m_LocalRotation: {x: -0, y: -0, z: -0.4478263, w: 0.89412063}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1506055896}
@@ -3182,7 +3197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558944080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.18, y: -1.67, z: 0}
+  m_LocalPosition: {x: -1.2, y: -2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3436,15 +3451,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 350
+  rotateSpeed: 200
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 658827522}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 95
+  center: 90
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &658827524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4069,7 +4084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774087843}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4610,15 +4625,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 908452325}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 95
+  center: 85
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &908452327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4906,7 +4921,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &951851292
 Animator:
   serializedVersion: 4
@@ -4939,15 +4954,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 150
+  rotateSpeed: 100
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 951851292}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 95
+  center: 90
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &951851294
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5165,7 +5180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 970920910}
@@ -5173,7 +5188,7 @@ MonoBehaviour:
   meet: 0
   center: 100
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &970920912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6164,7 +6179,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &1280781175
 Animator:
   serializedVersion: 4
@@ -6197,15 +6212,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 1280781175}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 95
+  center: 85
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &1280781177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6398,7 +6413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312308403}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6526,7 +6541,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.7
+  m_Radius: 0.6
 --- !u!95 &1345764415
 Animator:
   serializedVersion: 4
@@ -6559,15 +6574,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 150
+  rotateSpeed: 100
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 1345764415}
   camTartget: {fileID: 554974646}
   meet: 0
-  center: 95
+  center: 85
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &1345764417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7731,11 +7746,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a4ad870ffae7a42923ae3d882a7b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 300
+  rotateSpeed: 100
   star: {fileID: 467976482}
   camTartget: {fileID: 1874155516}
   fullCount: {fileID: 733060878}
   anim: {fileID: 1506055899}
+  camSpeed: 2
+  zoomSpeed: 10
+  center: 93
 --- !u!95 &1506055899
 Animator:
   serializedVersion: 4
@@ -8136,7 +8154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595811385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -6.92, z: 9.729637}
+  m_LocalPosition: {x: 4, y: -7.2, z: 9.729637}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9203,7 +9221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780969044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9666,7 +9684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864158827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.07, y: -4.86, z: 0}
+  m_LocalPosition: {x: 5.07, y: -3.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10038,7 +10056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 300
+  rotateSpeed: 200
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 1901549910}
@@ -10046,7 +10064,7 @@ MonoBehaviour:
   meet: 0
   center: 100
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!95 &1901549910
 Animator:
   serializedVersion: 4
@@ -10815,15 +10833,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af5e4cf837f60f4096286e52f510a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 200
+  rotateSpeed: 150
   star: {fileID: 467976482}
   key: {fileID: 733060878}
   anim: {fileID: 2070613315}
   camTartget: {fileID: 1595811385}
   meet: 0
-  center: 95
+  center: 90
   camSpeed: 2
-  zoomSpeed: 5
+  zoomSpeed: 10
 --- !u!212 &2070613317
 SpriteRenderer:
   m_ObjectHideFlags: 0

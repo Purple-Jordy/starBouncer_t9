@@ -162,17 +162,7 @@ public class planet : MonoBehaviour
         }
     }
 
-    void zoomIn()
-    {
-        camera campoint = GameObject.Find("Main Camera").GetComponent<camera>();
-        campoint.target = camTartget; //카메라 타겟
-        campoint.camwidth = center; // 카메라 커지는 넓이
-        campoint.speed = camSpeed; // 카메라 타겟 속도
-        campoint.zoomSpeed = zoomSpeed; // 카메라 확대 속도 
-        
-
-
-    }
+   
 
    
 

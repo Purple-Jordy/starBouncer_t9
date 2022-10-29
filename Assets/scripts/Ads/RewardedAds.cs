@@ -34,7 +34,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     // Implement a method to execute when the user clicks the button:
     public void ShowAd()
     {
-        // LoadAd();
+        LoadAd();
         Advertisement.Show(_adUnitId, this);
     }
 

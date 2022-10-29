@@ -46,8 +46,8 @@ public class keySystem : MonoBehaviour
             //Invoke("wait", 1);
             cam.GetComponent<camera>().target = fullShot;
             Invoke("Name", 2);
-            Invoke("starImage", 4);
-            Invoke("finishUI", 9);
+            Invoke("starImage", 3);
+            Invoke("finishUI", 8);
 
 
             //campoint.target = fullShot;
@@ -135,6 +135,13 @@ public class keySystem : MonoBehaviour
         finishUi.SetActive(true);
     }
 
-    
+    void Vibe()
+    {
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+    }
+
 
 }

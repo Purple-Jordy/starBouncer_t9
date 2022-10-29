@@ -22,11 +22,20 @@ public class retryPanel : MonoBehaviour
 
     public void retry()
     {
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Revive()
     {
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
 
         star.GetComponent<CircleMove>().PositionLoad();
         

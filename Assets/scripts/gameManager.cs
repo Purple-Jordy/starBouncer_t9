@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class gameManager : MonoBehaviour
 {
-    
+    public GameObject PauseUI; 
+
     public static gameManager I;
 
     void Awake()
@@ -25,20 +26,45 @@ public class gameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+     
+        if(Application.platform == RuntimePlatform.Android)
         {
 
-            Save();
-            Application.Quit();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                //back button
+                Time.timeScale = 0;
+                PauseUI.SetActive(true);
+                
+                
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.Home))
+            {
+                //home button
+                Time.timeScale = 0;
+                PauseUI.SetActive(true);
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.Menu))
+            {
+                //menu button
+                Time.timeScale = 0;
+                PauseUI.SetActive(true);
+            }
+
+
+
+
         }
+        
+       
 
     }
 
-    public void Save()
-    {
-        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
-        PlayerPrefs.Save();
-    }
+    
 
 
 

@@ -19,6 +19,12 @@ public class Menu : MonoBehaviour
 
     public void MainMenu()
     {
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+
         PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
         PlayerPrefs.Save();
         SceneManager.LoadScene("1.MainMenu");

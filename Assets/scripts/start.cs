@@ -13,7 +13,11 @@ public class start : MonoBehaviour
     public GameObject fullCount;
     public Animator anim;
 
-    
+    public float camSpeed;
+    public float zoomSpeed;
+    public float center;
+
+
 
     void Update()
     {
@@ -51,6 +55,17 @@ public class start : MonoBehaviour
 
             camera campoint = GameObject.Find("Main Camera").GetComponent<camera>();
             campoint.target = camTartget;
+            
+            campoint.target = camTartget; //카메라 타겟
+            campoint.camwidth = center; // 카메라 커지는 넓이
+            campoint.speed = camSpeed; // 카메라 타겟 속도
+            campoint.zoomSpeed = zoomSpeed; // 카메라 확대 속도 
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+
 
         }
     }

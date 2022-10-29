@@ -5,14 +5,15 @@ using UnityEngine;
 public class FirstSatellite : MonoBehaviour
 {
 
-    public GameObject target;
-    public float rotate;
+    //public GameObject target;
+    float rotate;
+    public GameObject planet1;
 
     private void Awake()
     {
         
-        if (target) {
-            rotate = target.GetComponent<start>().rotateSpeed;
+        if (planet1) {
+            rotate = planet1.GetComponent<start>().rotateSpeed;
         }
 
     }
@@ -20,8 +21,8 @@ public class FirstSatellite : MonoBehaviour
     void Update()
     {
         
-        if (target) {
-            transform.RotateAround(target.transform.position, Vector3.back, rotate * Time.deltaTime);
+        if (planet1) {
+            transform.RotateAround(planet1.transform.position, Vector3.back, rotate * Time.deltaTime);
         }
         
     }

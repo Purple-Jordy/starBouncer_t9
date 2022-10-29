@@ -42,7 +42,14 @@ public class nextStage : MonoBehaviour
 
         //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½Â´ï¿½
         SceneManager.LoadScene(nextScene);
-        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+
+        // ´ÙÀ½ ¾ÀÀ» ÀúÀåÇÑ´Ù 
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex + 1);
         PlayerPrefs.Save();
 
     }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
+
 
 public class planet : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class planet : MonoBehaviour
     public Animator anim;
     public GameObject camTartget;
     bool touchStar = false;
-    public bool meet;
+    bool meet;
     public float center;
 
     //private bool clockWise = true;
@@ -56,15 +58,9 @@ public class planet : MonoBehaviour
             //move.speed = go;
 
 
-            if (Input.GetMouseButtonDown(0))
-            {
-                //star.GetComponent<CircleMove>().bc();
-                meet = false;
-                //star.GetComponent<CircleMove>().rigid.isKinematic = true;
-                //CircleMove move = GameObject.Find("Circle").GetComponent<CircleMove>();  
-                //move.bc();
+    
 
-            }
+            
         }
 
     }
@@ -123,9 +119,6 @@ public class planet : MonoBehaviour
 #if !UNITY_EDITOR
      Vibrate.vibrate((long)100);
 #endif
-
-
-
 
 
 

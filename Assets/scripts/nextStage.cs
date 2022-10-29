@@ -21,15 +21,7 @@ public class nextStage : MonoBehaviour
 
     public void LoadNextScene()
     {
-        if (interstitialAds) {
-            string playedRoundsNumKey = "PlayedRoundsNum";
-            int roundCnt = PlayerPrefs.GetInt(playedRoundsNumKey);
-            roundCnt++;
-            PlayerPrefs.SetInt(playedRoundsNumKey, roundCnt);
-            if (roundCnt > 2) {
-                interstitialAds.ShowAd();
-            }
-        }
+        
 
         //���� �� ������ ������ �´�
         Scene scene = SceneManager.GetActiveScene();
@@ -54,5 +46,19 @@ public class nextStage : MonoBehaviour
 
     }
 
+    void ads()
+    {
+        if (interstitialAds)
+        {
+            string playedRoundsNumKey = "PlayedRoundsNum";
+            int roundCnt = PlayerPrefs.GetInt(playedRoundsNumKey);
+            roundCnt++;
+            PlayerPrefs.SetInt(playedRoundsNumKey, roundCnt);
+            if (roundCnt > 2)
+            {
+                interstitialAds.ShowAd();
+            }
+        }
+    }
 
 }

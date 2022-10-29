@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class keySystem : MonoBehaviour
 {
+    
     public GameObject starLine;
     public int count;
     public int touchCount;
@@ -18,21 +19,14 @@ public class keySystem : MonoBehaviour
     public GameObject finishUi;
     public GameObject countUi;
     public GameObject firstPlanet;
-
+    public GameObject starTarget;
 
     public float full;
     public float zoomSpeed;
     public Text CountText;
     public Text TouchCountText;
 
-    
 
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -46,7 +40,7 @@ public class keySystem : MonoBehaviour
             //Invoke("wait", 1);
             cam.GetComponent<camera>().target = fullShot;
             Invoke("Name", 2);
-            Invoke("starImage", 3);
+            Invoke("starImage", 3);           
             Invoke("finishUI", 8);
 
 
@@ -64,12 +58,12 @@ public class keySystem : MonoBehaviour
         if (count == touchCount)
         {
             star.SetActive(false);
-            star.GetComponent<CircleMove>().panel.SetActive(false);
+            starTarget.GetComponent<CircleTarget>().panel.SetActive(false);
             zoom();
             countUi.SetActive(false);
 
-            
-            
+
+
 
             GameObject yellow = firstPlanet.transform.GetChild(1).gameObject;
             yellow.SetActive(false);
@@ -82,21 +76,6 @@ public class keySystem : MonoBehaviour
     }
 
 
-
-
-    private void OnTriggerEnter2D(Collider2D coll)
-    {
-        if (coll.gameObject.CompareTag("star"))
-        {
-
-            ///Invoke("wait", 1);
-            //camera campoint = GameObject.Find("Main Camera").GetComponent<camera>();
-            
-            //GameObject.Find("Circle").SetActive(false);
-
-
-        }
-    }
 
     void wait()
     {
@@ -113,11 +92,8 @@ public class keySystem : MonoBehaviour
         //cam.GetComponent<Camera>().fieldOfView = viewSize;
         camBound.SetActive(false);
         
-
-
     }
 
-   
 
 
     void Name()

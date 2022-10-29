@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CircleMove : MonoBehaviour
 {
@@ -22,19 +23,38 @@ public class CircleMove : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+
         
     }
-   
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && circleMove == false)
+        {
+            if (Input.touchCount > 0)
+            {
+                if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+                    return;
+
+                else
+                {
+                    circleMove = true;
+                }
+
+
+            }
+
+
+
+        }
+    }
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(0) && circleMove == false)
-        {
-            circleMove = true;
 
-
-        }
+       
 
         if (circleMove == true)
         {
@@ -46,10 +66,11 @@ public class CircleMove : MonoBehaviour
             Vector3 v3 = target.transform.position - this.transform.position;//πÊ«‚
             v3 = v3.normalized;
 
-            //rigid.AddForce(v3 * rotateSpeed, ForceMode2D.Force);
-           
-            rigid.AddForce(v3 * rotateSpeed);
-            //rigid.AddForce(v3.normalized * rotateSpeed);
+            rigid.AddForce(v3 * rotateSpeed, ForceMode2D.Force);
+
+
+            //rigid.AddForce(v3 * rotateSpeed);
+            
             rigid.velocity = Vector2.zero;
         }
 

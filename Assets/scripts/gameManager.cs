@@ -56,15 +56,13 @@ public class gameManager : MonoBehaviour
             }
 
 
-
-
         }
         
-       
+
+
 
     }
 
-    
 
 
 

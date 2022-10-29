@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class start : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class start : MonoBehaviour
     public float rotateSpeed;
     public GameObject star;
 
-    //bool meet;
+ 
     public GameObject camTartget;
     public GameObject fullCount;
     public Animator anim;
@@ -17,17 +19,18 @@ public class start : MonoBehaviour
     public float zoomSpeed;
     public float center;
 
+ 
 
+    void Start()
+    {
+        
+    }
 
     void Update()
     {
 
+        //star.GetComponent<CircleMove>().circleMove = true;
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            star.GetComponent<CircleMove>().circleMove = true;
-            
-        }
 
         if (fullCount.GetComponent<keySystem>().count == fullCount.GetComponent<keySystem>().touchCount)
         {

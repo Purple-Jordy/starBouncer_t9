@@ -34,11 +34,6 @@ public class CircleMove : MonoBehaviour
             circleMove = true;
 
 
-#if !UNITY_EDITOR
-     Vibrate.vibrate((long)100);
-#endif
-
-
         }
 
         if (circleMove == true)

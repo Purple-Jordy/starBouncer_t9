@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class retryPanel : MonoBehaviour
 {
     public GameObject star;
+    public RewardedAds rewardedAds;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rewardedAds._rewardedAdComplete.AddListener(Revive);
     }
 
     // Update is called once per frame
@@ -24,12 +25,15 @@ public class retryPanel : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void Return() //Revive
+    public void Revive()
     {
 
-        
         star.GetComponent<CircleMove>().PositionLoad();
         
+    }
+
+    public void OnClickReviveButton() {
+        rewardedAds.ShowAd();
     }
 
 }

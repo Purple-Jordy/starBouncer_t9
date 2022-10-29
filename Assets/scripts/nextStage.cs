@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class nextStage : MonoBehaviour
 {
+    [SerializeField] InterstitialAds interstitialAds;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        interstitialAds = Object.FindObjectOfType<InterstitialAds>();
     }
 
     // Update is called once per frame
@@ -19,16 +21,26 @@ public class nextStage : MonoBehaviour
 
     public void LoadNextScene()
     {
-        //ÇöÀç ¾À Á¤º¸¸¦ °¡Áö°í ¿Â´Ù
+        if (interstitialAds) {
+            string playedRoundsNumKey = "PlayedRoundsNum";
+            int roundCnt = PlayerPrefs.GetInt(playedRoundsNumKey);
+            roundCnt++;
+            PlayerPrefs.SetInt(playedRoundsNumKey, roundCnt);
+            if (roundCnt > 2) {
+                interstitialAds.ShowAd();
+            }
+        }
+
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â´ï¿½
         Scene scene = SceneManager.GetActiveScene();
 
-        //ÇöÀç ¾ÀÀÇ ºôµå ¼ø¼­¸¦ °¡Áö°í ¿Â´Ù
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â´ï¿½
         int curScene = scene.buildIndex;
 
-        //ÇöÀç ¾À ¹Ù·Î ´ÙÀ½ ¾ÀÀ» °¡Á®¿À±â À§ÇØ +1À» ÇØÁØ´Ù.
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ +1ï¿½ï¿½ ï¿½ï¿½ï¿½Ø´ï¿½.
         int nextScene = curScene + 1;
 
-        //´ÙÀ½ ¾ÀÀ» ºÒ·¯¿Â´Ù
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½Â´ï¿½
         SceneManager.LoadScene(nextScene);
         PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
         PlayerPrefs.Save();

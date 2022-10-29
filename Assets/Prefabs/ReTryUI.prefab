@@ -291,6 +291,9 @@ GameObject:
   - component: {fileID: 2397219289877529220}
   - component: {fileID: 2397219289877529227}
   - component: {fileID: 2397219289877529226}
+  - component: {fileID: 1296686418571085451}
+  - component: {fileID: 3051036363226472634}
+  - component: {fileID: 7128161772452911380}
   m_Layer: 5
   m_Name: ReTryUI
   m_TagString: Untagged
@@ -380,6 +383,60 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1296686418571085451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397219289877529225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edf0f4371fc643eb8e59ddb5a998d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
+  _rewardedAdComplete:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3051036363226472634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397219289877529225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a98aeb94cec24818889bd099821ea92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Interstitial_Android
+  _iOsAdUnitId: Interstitial_iOS
+  _interstitialAdComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  _interstitialAdShowFailure:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7128161772452911380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397219289877529225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb284667883dc4372984f602201eab8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidGameId: 4986687
+  _iOSGameId: 4986686
+  _testMode: 1
+  rewardedAds: {fileID: 1296686418571085451}
+  interstitialAds: {fileID: 3051036363226472634}
 --- !u!1 &2397219290114398632
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   star: {fileID: 0}
+  rewardedAds: {fileID: 1296686418571085451}
 --- !u!1 &2397219290312913842
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +712,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2397219290312913836}
         m_TargetAssemblyTypeName: retryPanel, Assembly-CSharp
-        m_MethodName: Return
+        m_MethodName: OnClickReviveButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -677,6 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   star: {fileID: 0}
+  rewardedAds: {fileID: 1296686418571085451}
 --- !u!1 &2397219290361978658
 GameObject:
   m_ObjectHideFlags: 0

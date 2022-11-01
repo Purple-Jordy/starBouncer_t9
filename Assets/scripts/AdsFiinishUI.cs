@@ -15,6 +15,14 @@ public class AdsFiinishUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("AwakeAds", 5);
+    }
+
+    // Update is called once per frame
+    
+
+    void AwakeAds()
+    {
         if (interstitialAds)
         {
             string playedRoundsNumKey = "PlayedRoundsNum";
@@ -28,9 +36,4 @@ public class AdsFiinishUI : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

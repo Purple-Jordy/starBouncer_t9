@@ -8,6 +8,7 @@ public class PauseUI : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Pauseui;
+    public AudioSource CamBgm;
 
     public void Resume()
     {
@@ -19,6 +20,7 @@ public class PauseUI : MonoBehaviour
 
         Time.timeScale = 1;
         Pauseui.SetActive(false);
+        CamBgm.Play();
     }
 
     public void retry()

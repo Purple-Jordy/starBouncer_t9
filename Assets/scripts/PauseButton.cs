@@ -10,8 +10,8 @@ public class PauseButton : MonoBehaviour
 {
 
     public GameObject PauseUI;
-    
 
+    public AudioSource CamBgm;
     
 
     
@@ -24,9 +24,11 @@ public class PauseButton : MonoBehaviour
 #endif
         Time.timeScale = 0;
         PauseUI.SetActive(true);
-        
-        
-        
+        CamBgm.Pause();
+
+
+
+
     }
 
 

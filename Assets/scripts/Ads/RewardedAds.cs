@@ -9,6 +9,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
     public UnityEvent _rewardedAdComplete;
+    private bool showAdOnLoad = false;
 
     void Awake()
     {
@@ -29,13 +30,17 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
         Debug.Log("Ad Loaded: " + adUnitId);
+        if (showAdOnLoad) {
+            Advertisement.Show(_adUnitId, this);
+            showAdOnLoad = false;
+        }
     }
 
     // Implement a method to execute when the user clicks the button:
     public void ShowAd()
     {
+        showAdOnLoad = true;
         LoadAd();
-        Advertisement.Show(_adUnitId, this);
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
@@ -62,6 +67,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
         Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
         // GameManager.I.isGameOver = true;
         // Use the error details to determine whether to try to load another ad.
+        showAdOnLoad = false;
     }
 
     public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)

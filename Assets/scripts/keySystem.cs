@@ -64,7 +64,11 @@ public class keySystem : MonoBehaviour
         if (count == touchCount)
         {
             star.SetActive(false);
+<<<<<<< Updated upstream
             star.GetComponent<CircleMove>().panel.SetActive(false);
+=======
+            starTarget.GetComponent<CircleTarget>().Panel.SetActive(false);
+>>>>>>> Stashed changes
             zoom();
             countUi.SetActive(false);
 

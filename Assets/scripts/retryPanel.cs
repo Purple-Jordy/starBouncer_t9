@@ -11,6 +11,10 @@ public class retryPanel : MonoBehaviour
     void Start()
     {
         
+<<<<<<< Updated upstream
+=======
+        //rewardedAds._rewardedAdComplete.AddListener(Revive);
+>>>>>>> Stashed changes
     }
 
     // Update is called once per frame
@@ -32,12 +36,20 @@ public class retryPanel : MonoBehaviour
     public void Return()
     {
 
-#if !UNITY_EDITOR
-     Vibrate.vibrate((long)100);
-#endif
-
         star.GetComponent<CircleMove>().PositionLoad();
         
     }
 
+<<<<<<< Updated upstream
+=======
+    public void OnClickReviveButton() {
+        rewardedAds.ShowAd();
+#if !UNITY_EDITOR
+     Vibrate.vibrate((long)100);
+#endif
+
+        Invoke("Revive", 1);
+    }
+
+>>>>>>> Stashed changes
 }

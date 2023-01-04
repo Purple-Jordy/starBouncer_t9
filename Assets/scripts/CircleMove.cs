@@ -73,14 +73,14 @@ public class CircleMove : MonoBehaviour
 
     public void PositionLoad()
     {
-        
+        panel.SetActive(false);
         gameObject.SetActive(true);
         float x = PlayerPrefs.GetFloat("starX");
         float y = PlayerPrefs.GetFloat("starY");
         
         
         gameObject.transform.position = new Vector3(x, y, 0);
-        panel.SetActive(false);
+        
 
 
     }

@@ -1015,6 +1015,129 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!1001 &279099716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2397219289877529220, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529221, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219289877529225, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: m_Name
+      value: ReTryUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397219290312913836, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+      propertyPath: star
+      value: 
+      objectReference: {fileID: 908557744}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+--- !u!1 &279099717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2397219289458637542, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+  m_PrefabInstance: {fileID: 279099716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &279099718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1698634892307812447, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+  m_PrefabInstance: {fileID: 279099716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &279099719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8388703215558883501, guid: ec7692940412049b2a5599e0bbc2accb, type: 3}
+  m_PrefabInstance: {fileID: 279099716}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &296063306
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,8 +3928,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7c467172d0c8a4495508cec97d2598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   panel: {fileID: 307142651}
+=======
+  Panel: {fileID: 279099717}
+  ReviveButton: {fileID: 279099719}
+  RetryButton: {fileID: 279099718}
+>>>>>>> Stashed changes
   star: {fileID: 908557744}
+  key: {fileID: 733060878}
 --- !u!1 &713343943
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,7 +5068,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 200
   rigid: {fileID: 0}
+<<<<<<< Updated upstream
   panel: {fileID: 307142651}
+=======
+  panel: {fileID: 279099717}
+>>>>>>> Stashed changes
   target: {fileID: 692114629}
   circleMove: 0
 --- !u!58 &908557750

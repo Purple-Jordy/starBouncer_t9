@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1040041603170:android:814ec39ae0d3a3868c213b",
+        "mobilesdk_app_id": "1:1040041603170:android:57c0c0e54ce82a598c213b",
         "android_client_info": {
-          "package_name": "com.DefaultCompany.StarBridges"
+          "package_name": "com.sparta.StarBridges"
         }
       },
       "oauth_client": [
